@@ -1,4 +1,5 @@
 <?php
+/*删除数据页面*/
 include 'common.php';
 //如果id为真的话
 if($_GET['id']){
