@@ -1,4 +1,5 @@
 <?php
+//11111
 include 'common.php';
 //如果id为真的话
 if($_GET['id']){
