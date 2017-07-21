@@ -1,4 +1,5 @@
 <?php
+//123
 include 'common.php';
 // var_dump($_POST);
 if($_POST['send']){
