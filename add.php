@@ -1,4 +1,5 @@
 <?php
+/*添加一段文字1111*/
 include 'common.php';
 // var_dump($_POST);
 if($_POST['send']){
