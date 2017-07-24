@@ -1,5 +1,6 @@
 <?php
 include 'common.php';
+include 'checklogin.php';
 // var_dump($_POST);
 if($_POST['send']){
     if($_POST['username']){
@@ -56,17 +57,8 @@ location.href='getall.php';
     
 }
 ?>
-<script src=Tools.js></script>
-<style>
-.form-horizontal{
-	width:70%;
-	margin:0 auto;
-}
-.reg input{
-	margin-top:5px;
-	width:90%;
-}
-</style>
+
+
 <!-- <form action='' method="post" class="reg"> -->
 <!-- 用户名：<input type="text" name="username"><br> -->
 <!-- 密码：<input type="password" name="pwd"><br> -->
@@ -103,6 +95,7 @@ location.href='getall.php';
     </div>
   </fieldset>
 </form>
+<script src=Tools.js></script>
 <script>
 var addbtn=document.querySelector(".add")
 var email=document.querySelector(".email")
@@ -116,3 +109,20 @@ if(!validate_email(email.value)){
 evt.preventDefault();
 })
 </script>
+<style>
+.form-horizontal{
+	width:70%;
+	margin:0 auto;
+}
+.reg input{
+	margin-top:5px;
+	width:90%;
+}
+.form-horizontal input{
+	width:50%;
+}
+.form-horizontal .add{
+	width:80px;
+}
+</style>
+ <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.css">

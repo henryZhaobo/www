@@ -12,6 +12,12 @@ try{
 //设置操作数据库字符集
 $pdo->query("set names utf8"); */
 include 'common.php';
+//验证管理员是否登录，未登录跳转到登录页面；
+include 'checklogin.php';
+echo"<pre>";
+var_dump($_SESSION);
+var_dump($_COOKIE);
+echo"</pre>";
 $total=$pdo->query("select * from member")->rowCount();
 //总记录数；
 // echo $total;

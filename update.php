@@ -1,5 +1,6 @@
 <?php
 include 'common.php';
+include 'checklogin.php';
 if($_GET['id']){
     $sql="select * from member where id=".$_GET['id'];
 //     echo $sql;
