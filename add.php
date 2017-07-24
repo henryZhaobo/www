@@ -1,4 +1,5 @@
 <?php
+//123
 include 'common.php';
 include 'checklogin.php';
 // var_dump($_POST);
@@ -109,6 +110,7 @@ if(!validate_email(email.value)){
 evt.preventDefault();
 })
 </script>
+<<<<<<< HEAD
 <style>
 .form-horizontal{
 	width:70%;
